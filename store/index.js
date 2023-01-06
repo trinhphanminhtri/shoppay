@@ -4,9 +4,9 @@ import thunk from "redux-thunk";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
 
-import cart from "./cartSlice";
+import cartSlice from "./cartSlice";
 
-const reducers = combineReducers({cart}); // to be able to have a lot of reducers at the same time
+const reducers = combineReducers({cartSlice}); // to be able to have a lot of reducers at the same time
 
 // config for reducers
 const config = {
