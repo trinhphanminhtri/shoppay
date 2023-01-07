@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import { Fragment } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 
@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 import Main from "../components/home/main";
 import axios from "axios";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function HomePage({ country }) {
   const { data: session } = useSession();
