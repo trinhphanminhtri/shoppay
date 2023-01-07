@@ -118,8 +118,8 @@
   }
   &_copyright {
     grid-area: copyright;
+    font-size: 12px;
     section {
-      font-size: 12px;
       color: $dark-gray-color;
       padding-bottom: 10px;
     }
