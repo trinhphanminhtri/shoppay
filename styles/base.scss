@@ -47,6 +47,13 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 .swiper {
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  &:hover {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: grid;
+    }
+  }
 }
 
 .swiper-slide {
@@ -93,6 +100,8 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 50px;
     height: 80px;
     background-color: $dark-gray-color;
+    display: none;
+    place-items: center;
   }
   .swiper-pagination-bullet-active {
     background-color: $blue-color;
