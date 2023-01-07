@@ -1,5 +1,5 @@
 $blue-color:#2f82ff;
-$gray-color:#f8f8f8;
+$light-gray-color:#f8f8f8;
 $dark-gray-color:#666;
 $white-color:#fff;
 $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -16,15 +16,22 @@ $shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 100%;
   border-radius: 4px;
 }
+
 .btn_outline{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   color: $blue-color;
-  background-color:$gray-color;
+  background-color:$light-gray-color;
   font-weight: 500;
   cursor: pointer;
   width: 100%;
   border-radius: 4px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

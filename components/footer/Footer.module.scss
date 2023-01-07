@@ -1,0 +1,149 @@
+.footer {
+  background-color: $light-gray-color;
+  &_container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "payment"
+      "links"
+      "newsletter"
+      "socials"
+      "copyright";
+    gap: 3rem;
+    padding: 1rem;
+    @media (min-width: 800px) {
+      grid-template-areas:
+        "links socials"
+        "links newsletter"
+        "copyright payment";
+    }
+    @media (min-width: 1200px) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  &_links {
+    grid-area: links;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    ul {
+      padding: 5px;
+      strong {
+        text-transform: uppercase;
+      }
+      img {
+        object-fit: contain;
+      }
+      li {
+        font-size: 12px;
+        a {
+          color: $dark-gray-color;
+          line-height: 2.3;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: $dark-gray-color;
+    text-transform: uppercase;
+  }
+  &_socials {
+    grid-area: socials;
+    section {
+      ul {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        li {
+          font-size: 2rem;
+          color: $dark-gray-color;
+          &:hover {
+            color: $blue-color;
+          }
+        }
+      }
+    }
+  }
+  &_newsLetter {
+    grid-area: newsletter;
+    input {
+      outline: none;
+      border: 1px solid $dark-gray-color;
+      border-right: none;
+      flex: 1;
+      height: 40px;
+      font-size: 14px;
+      padding-left: 10px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    button {
+      width: 160px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 12px;
+      color: $dark-gray-color;
+      a {
+        color: $blue-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  &_flex {
+    display: flex;
+    margin-top: 10px;
+  }
+  &_payment {
+    grid-area: payment;
+  }
+  &_flexWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+    img {
+      object-fit: contain;
+    }
+  }
+  &_copyright {
+    grid-area: copyright;
+    section {
+      font-size: 12px;
+      color: $dark-gray-color;
+      padding-bottom: 10px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 2rem;
+      li {
+        position: relative;
+        text-decoration: underline;
+        color: $dark-gray-color;
+        &::after {
+          content: "";
+          width: 1px;
+          height: 15px;
+          background-color: $dark-gray-color;
+          position: absolute;
+          right: -1rem;
+        }
+        &:last-of-type::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

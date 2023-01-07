@@ -12,7 +12,7 @@ const MainHeader = () => {
     <div className={styles.mainHeader}>
       <div className={styles.mainHeader_container}>
         <Link className={styles.logo} href="/">
-          <Image src="/logo.png" width={144} height={48} alt="logo" />
+          <Image src="/logo.png" width={140} height={44} alt="logo" />
         </Link>
         <div className={styles.search}>
           <input type="text" placeholder="Search..." />

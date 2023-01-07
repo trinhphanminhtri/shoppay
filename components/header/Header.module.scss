@@ -13,7 +13,7 @@
 }
 
 .top {
-  background-color: #f8f8f8;
+  background-color: $light-gray-color;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
   &_Container {
@@ -163,10 +163,9 @@
     width: 100%;
   }
   .logo {
-    // img {
-    //   width: 100%;
-    //   height: 100%;
-    // }
+    img {
+      object-fit: contain;
+    }
   }
   .search {
     display: flex;
