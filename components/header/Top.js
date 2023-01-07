@@ -7,7 +7,7 @@ import styles from "./Header.module.scss";
 import { useState } from "react";
 import UserMenu from "./UserMenu";
 
-const Top = () => {
+const Top = ({ country }) => {
   const [loggedIn, setLoggedIn] = useState(true);
   const [visible, setVisible] = useState(false);
 
@@ -19,12 +19,13 @@ const Top = () => {
           <ul className={styles.top_List}>
             <li className={styles.li}>
               <Image
-                src="/vietnam-flag-png.png"
+                // src="/vietnam-flag-png.png"
+                src={country.flag}
                 alt="flag"
                 width={28}
                 height={28}
               />
-              <span>Vietnam&nbsp;/&nbsp;vnđ</span>
+              <span>{country.name}&nbsp;/&nbsp;vnđ</span>
             </li>
             <li className={styles.li}>
               <MdSecurity />

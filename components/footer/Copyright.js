@@ -25,7 +25,7 @@ import styles from "./Footer.module.scss";
 import Link from "next/link";
 import { IoLocationSharp } from "react-icons/io5";
 
-const Copyright = () => {
+const Copyright = ({country}) => {
   const currentYear = new Date().getFullYear();
   return (
     <div className={styles.footer_copyright}>
@@ -38,7 +38,7 @@ const Copyright = () => {
         ))}
         <li>
           <Link href="/">
-            <IoLocationSharp /> Vietnam
+            <IoLocationSharp /> {country.name}
           </Link>
         </li>
       </ul>

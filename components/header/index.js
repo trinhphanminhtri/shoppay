@@ -3,11 +3,11 @@ import Ad from "./Ad";
 import Top from "./Top";
 import MainHeader from "./Main";
 
-const Header = () => {
+const Header = ({country}) => {
   return (
     <header className={styles.header}>
       <Ad />
-      <Top />
+      <Top country={country} />
       <MainHeader />
     </header>
   );
