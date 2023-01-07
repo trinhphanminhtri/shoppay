@@ -6,15 +6,20 @@ import { Fragment } from "react";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Main from "../components/home/main";
 import axios from "axios";
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function HomePage({ country }) {
   return (
     <Fragment>
       <Header country={country} />
-      <h1>Home Page</h1>
+      <div className={styles.home}>
+        <div className={styles.container}>
+          <Main />
+        </div>
+      </div>
       <Footer country={country} />
     </Fragment>
   );
