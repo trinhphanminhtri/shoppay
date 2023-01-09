@@ -7,7 +7,7 @@
     "menu swiper user"
     "menu offers user";
   .menu {
-    height: 560px;
+    height:580px;
     grid-area: menu;
     border-radius: 10px;
     box-shadow: $shadow-1;
@@ -26,13 +26,17 @@
   }
   .offers {
     grid-area: offers;
-    height: 200px;
+    height: 220px;
     border-radius: 10px;
     box-shadow: $shadow-1;
+    overflow: hidden;
+    background-image: url("../../../public/images/flash.webp");
+  background-position: -275px -135px;
+  background-size: cover;
   }
   .user {
     grid-area: user;
-    height: 510px;
+    height: 530px;
     border-radius: 10px;
     box-shadow: $shadow-1;
   }

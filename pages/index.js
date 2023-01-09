@@ -14,11 +14,12 @@ import axios from "axios";
 
 export default function HomePage({ country }) {
   const { data: session } = useSession();
-
+  console.log(session);
   return (
     <Fragment>
       <Header country={country} />
       <div className={styles.home}>
+        <h1>{session ? "You are logged in" : "You are not logged in"}</h1>
         <div className={styles.container}>
           <Main />
         </div>
